@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import mainProfile from '../src/images/main_profile.png'
 function App() {
   let pinktext = {color : '#FF6FA0', fontWeight : 'bold'};
 
@@ -15,6 +15,9 @@ function App() {
           <div className='intro-text'>
             <p className='intro-border'>매일매일이 <span style={pinktext}>색다른 메타몽</span>처럼,<br/>하지만 항상 겸손한 마음가짐으로</p>
           </div>
+        </div>
+        <div className='mainProfile'>
+            <img src={mainProfile}/>
         </div>
       </main>
     </div>
