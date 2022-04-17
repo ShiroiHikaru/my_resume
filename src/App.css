@@ -108,15 +108,36 @@ ul{
   cursor: pointer;
 }
 
-
-
-
 /* icon size */
 .icon01, .icon02, .icon03, .icon04, .icon05, .icon06{
   width: 70px;
   height: 70px;
 }
 
+/* 인삿말 */
+
+.hello{
+  width: 60%;
+  height: 100%;
+  border: maroon 2px solid;
+  margin: auto;
+  padding: 120px 0px 120px 0px;
+}
+
+.hello .hello-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.hello .hello-wrap h2{
+  font-size: 55px;
+}
+
+.hello .hello-wrap .textbox{
+  width: 680px;
+}
 
 /* media query */
 @media (prefers-reduced-motion: no-preference) {
