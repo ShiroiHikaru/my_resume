@@ -4,20 +4,110 @@
 }
 
 body{
-  font-family: 'gmarketsansmedium';
+  font-family: 'GmarketSansLight';
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
-/* main */
-.profile-wrap{
-  max-width: 100vw;
-  max-height: 100vh;
-  background-color: #555;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+/* main(인트로) */
+.container{
+  width: 100%;
+  height: 100%;
+}
+
+.profile-wrap{
+  background: #121212 url(../src/images/mask.svg) no-repeat;
+}
+
+.profile-wrap .profile{
+  border: 2px solid red;
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  padding: 120px 0px 120px 0px;
+}
+
+.profile-wrap .profile .intro-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text h1, h2{
+  margin-bottom: 30px;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text h1{
+  font-size: 90px;
+  line-height: 4rem;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text h1 .akaName{
+  font-size: 45px;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text h2{
+  line-height: 3rem;
+  font-size: 30px;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text .keypoint{
+  font-size: 30px;
+  font-family: 'GmarketSansBold';
+  color: #fff;
+  line-height: 2.5rem;
+}
+
+.profile-wrap .profile .intro-wrap .intro-text .introduce{
+  font-size: 15px;
+  color: #fff;
+  line-height: 20px;
+}
+
+/* 카테고리 버튼영역 */
+.profile-wrap .profile .categori{
+  width: 100%;
+  height: 100%;
+  background: #0ff; 
+}
+
+.profile-wrap .profile .categori ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-wrap .profile .categori ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  width: 184px;
+  height: 230px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+
+
+
+/* icon size */
+.icon01, .icon02, .icon03, .icon04, .icon05, .icon06{
+  width: 70px;
+  height: 70px;
+}
+
+
+/* media query */
 @media (prefers-reduced-motion: no-preference) {
 
 }
