@@ -25,10 +25,10 @@ ul{
 
 .profile-wrap{
   background: #121212 url(../src/images/mask.svg) no-repeat;
+  background-size: cover;
 }
 
 .profile-wrap .profile{
-  border: 2px solid red;
   width: 60%;
   height: 100%;
   margin: auto;
@@ -40,6 +40,11 @@ ul{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.profile-wrap .profile .intro-wrap img{
+  width: 554px;
+  height: 760px;
 }
 
 .profile-wrap .profile .intro-wrap .intro-text h1, h2{
@@ -70,31 +75,37 @@ ul{
 .profile-wrap .profile .intro-wrap .intro-text .introduce{
   font-size: 15px;
   color: #fff;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 /* 카테고리 버튼영역 */
 .profile-wrap .profile .categori{
   width: 100%;
   height: 100%;
-  background: #0ff; 
+  margin-top: 100px;
 }
 
 .profile-wrap .profile .categori ul{
   display: flex;
   justify-content: space-between;
+  
 }
 
-.profile-wrap .profile .categori ul li{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #fff;
-  width: 184px;
-  height: 230px;
+
+.profile-wrap .profile .categori ul li button{
+  width: 180px;
+  height: 220px;
   border-radius: 20px;
+  border: none;
+  background: #fff;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-size: 18px;
+  line-height: 45px;
+  cursor: pointer;
 }
 
 

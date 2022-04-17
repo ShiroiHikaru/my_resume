@@ -43,12 +43,12 @@ function App() {
                 </div>
                 <div className='categori'>
                     <ul>
-                      <li style={pinktextBold}><button><img src={profileIcon} className='icon01'/>Profile</button></li>
-                      <li style={pinktextBold}><button><img src={github} className='icon02'/>Publishing</button></li>
-                      <li style={pinktextBold}><button><img src={window} className='icon03'/>Web / Landing</button></li>
-                      <li style={pinktextBold}><button><img src={grid} className='icon04'/>Graphic</button></li>
-                      <li style={pinktextBold}><button><img src={social} className='icon05'/>Social</button></li>
-                      <li style={pinktextBold}><button><img src={youtube} className='icon06'/>Youtube</button></li>
+                      <li><button style={pinktextBold}><img src={profileIcon} className='icon01'/>Profile</button></li>
+                      <li><button style={pinktextBold}><img src={github} className='icon02'/>Publishing</button></li>
+                      <li><button style={pinktextBold}><img src={window} className='icon03'/>Web / Landing</button></li>
+                      <li><button style={pinktextBold}><img src={grid} className='icon04'/>Graphic</button></li>
+                      <li><button style={pinktextBold}><img src={social} className='icon05'/>Social</button></li>
+                      <li><button style={pinktextBold}><img src={youtube} className='icon06'/>Youtube</button></li>
                     </ul>
                 </div>
             </div>
