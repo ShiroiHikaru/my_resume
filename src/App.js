@@ -6,8 +6,10 @@ import logo from './logo.svg';
 import './normalize.css';
 import './App.css';
 
-// icon
+// images
 import mainProfile from '../src/images/main_profile.png';
+import bodyshot from '../src/images/bodyshot.png';
+// icon
 import profileIcon from '../src/images/profileicon.svg';
 import github from '../src/images/github.svg';
 import window from '../src/images/window.svg';
@@ -17,7 +19,8 @@ import youtube from '../src/images/youtube.svg';
 
 function App() {
   let pinktextBold = {color : '#FF6FA0', fontFamily: 'GmarketSansBold'};
-  let pinktextMedium = {color: '#FF6FA0', fontFamily: 'GmarketSansMedium'}
+  let pinktextMedium = {color: '#FF6FA0', fontFamily: 'GmarketSansMedium'};
+  let Blacktext = {color : '#000', fontFamily: 'GmarketSansMedium'};
   return (
     <div className="App">
       <main className='container'>
@@ -51,6 +54,20 @@ function App() {
                       <li><button style={pinktextBold}><img src={youtube} className='icon06'/>Youtube</button></li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section className='hello'>
+            <div className='hello-wrap'>
+              <img src={bodyshot}/>
+                  <div className='hello-text'>
+                      <h2 style = {Blacktext}>
+                          Who is<br/>
+                          <span style={pinktextBold}>Hee Yeon?</span>
+                      </h2>
+                      <div className='textbox'>
+                        
+                      </div>
+                  </div>
             </div>
         </section>
       </main>
