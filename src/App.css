@@ -146,11 +146,15 @@ ul{
   width: 100%;
   height: 100%;
   margin: auto;
-  background: url(../src/images/careeaback.jpg) no-repeat;
+  padding: 120px 0px 120px 0px;
+  background-image: url(../src/images/gradiant.png), url(../src/images/careeaback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .stack .mystack{
-  background: url(../src/images/gradiant.png);
+  width: 100%;
+  height: 100%;
 
     color: #fff;
 }
@@ -163,6 +167,10 @@ ul{
 
 .stack .mystack .stackTable thead tr{
   text-align: left;
+}
+
+.stack .mystack .stackTable caption{
+  text-indent: -9999px;
 }
 
 .stack .mystack .stackTable tr td{

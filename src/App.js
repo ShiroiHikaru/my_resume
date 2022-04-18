@@ -84,22 +84,30 @@ function App() {
         <section className='stack'>
             <div className='mystack'>
                   <table className='stackTable' border="1">
-                      <caption>스펙테이블</caption>
+                      <caption style>스펙테이블</caption>
                       <thead>
                         <tr>
-                          <th colSpan="3">Careea</th>
+                          <th colSpan="2">Careea</th>
                         </tr>
                       </thead>
                       <tbody>
                           <tr>
+                            <td rowSpan="2">Work</td>
+                            <td>
+                              2018. 04 - 2021. 05 : 광고대행사 카누크리에이션 대리
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>2015. 04 - 2016. 12 : 광고대행사 팸컴퍼니 사원</td>
+                          </tr>
+                          <tr>
                             <td>Work</td>
-                            <td rowSpan="2">
+                            <td>
                               2018. 04 - 2021. 05 : 광고대행사 카누크리에이션 대리
                             </td>
                             <td>
                             2015. 04 - 2016. 12 : 광고대행사 팸컴퍼니 사원
                             </td>
-                            
                           </tr>
                       </tbody>
                   </table>
@@ -111,10 +119,5 @@ function App() {
   
 }
 
-function Modal(){
-  return(
-    <div></div>
-  )
-}
 
 export default App;
