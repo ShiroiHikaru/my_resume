@@ -1,6 +1,6 @@
 // eslint-disable 
 
-
+import{ useRef } from 'react';
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './normalize.css';
@@ -16,11 +16,14 @@ import window from '../src/images/window.svg';
 import grid from '../src/images/grid.svg'
 import social from '../src/images/social.svg';
 import youtube from '../src/images/youtube.svg';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
   let pinktextBold = {color : '#FF6FA0', fontFamily: 'GmarketSansBold'};
   let pinktextMedium = {color: '#FF6FA0', fontFamily: 'GmarketSansMedium'};
   let Blacktext = {color : '#000', fontFamily: 'GmarketSansMedium'};
+  
+  
   return (
     <div className="App">
       <main className='container'>
@@ -73,17 +76,45 @@ function App() {
                         <br/><br/>
                         <span style={Blacktext}>“모르는건 죄가 아니지만 모르면서 아는 척은 죄이다.”</span> 롤모델인 친언니의 가르침으로<br/>
                         배움에 있어 부끄러워 하지 않고 항상 질문하며 
-                        겸손하게 받아들이는 자세로 한층 더 좋은 디자인과 개발자로서의 기능구현에 발돋움하고자 합니다.
+                        겸손하게 받아들이는 자세로<br/>한층 더 좋은 디자인과 개발자로서의 기능구현에 발돋움하고자 합니다.
                       </div>
                   </div>
             </div>
         </section>
         <section className='stack'>
-
+            <div className='mystack'>
+                  <table className='stackTable' border="1">
+                      <caption>스펙테이블</caption>
+                      <thead>
+                        <tr>
+                          <th colSpan="3">Careea</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                            <td>Work</td>
+                            <td rowSpan="2">
+                              2018. 04 - 2021. 05 : 광고대행사 카누크리에이션 대리
+                            </td>
+                            <td>
+                            2015. 04 - 2016. 12 : 광고대행사 팸컴퍼니 사원
+                            </td>
+                            
+                          </tr>
+                      </tbody>
+                  </table>
+            </div>
         </section>
       </main>
     </div>
   );
+  
+}
+
+function Modal(){
+  return(
+    <div></div>
+  )
 }
 
 export default App;
