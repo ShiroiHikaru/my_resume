@@ -84,7 +84,7 @@ function App() {
         <section className='stack'>
             <div className='mystack'>
                   <table className='stackTable' border="1">
-                      <caption style>스펙테이블</caption>
+                      <caption>스펙테이블</caption>
                       <thead>
                         <tr>
                           <th colSpan="2">Careea</th>
