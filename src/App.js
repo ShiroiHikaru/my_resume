@@ -1,14 +1,12 @@
 // eslint-disable 
-
-import{ useRef } from 'react';
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './normalize.css';
 import './App.css';
 
 // images
 import mainProfile from '../src/images/main_profile.png';
 import bodyshot from '../src/images/bodyshot.png';
+
 // icon
 import profileIcon from '../src/images/profileicon.svg';
 import github from '../src/images/github.svg';
@@ -16,14 +14,44 @@ import window from '../src/images/window.svg';
 import grid from '../src/images/grid.svg'
 import social from '../src/images/social.svg';
 import youtube from '../src/images/youtube.svg';
-import { click } from '@testing-library/user-event/dist/click';
+
+// status
+import StatusBar from './status.js';
+
+// testData area
+const testData = [
+  { bgcolor: "#FF6FA0", barcolor: 90}
+]
+
+const testData2 = [
+  { bgcolor: "#FF6FA0", barcolor: 80}
+]
+
+const testData3 = [
+  { bgcolor: "#FF6FA0", barcolor: 50}
+]
+
+const testData4 = [
+  { bgcolor: "#FF6FA0", barcolor: 35}
+]
+
+const testData5 = [
+  { bgcolor: "#FF6FA0", barcolor: 45}
+]
+
+const testData6 = [
+  { bgcolor: "#FF6FA0", barcolor: 40}
+]
+
+const testData7 = [
+  { bgcolor: "#FF6FA0", barcolor: 15}
+]
 
 function App() {
   let pinktextBold = {color : '#FF6FA0', fontFamily: 'GmarketSansBold'};
   let pinktextMedium = {color: '#FF6FA0', fontFamily: 'GmarketSansMedium'};
   let Blacktext = {color : '#000', fontFamily: 'GmarketSansMedium'};
-  
-  
+
   return (
     <div className="App">
       <main className='container'>
@@ -85,14 +113,14 @@ function App() {
             <div className='mystack'>
                   <table className='stackTable' border="1">
                       <caption>스펙테이블</caption>
-                      <thead>
+                      <thead className='careea'>
                         <tr>
                           <th colSpan="2">Careea</th>
                         </tr>
                       </thead>
                       <tbody>
                           <tr>
-                            <td rowSpan="2">Work</td>
+                            <td rowSpan="2" className="tablecaption" style={pinktextBold}>Work</td>
                             <td>
                               2018. 04 - 2021. 05 : 광고대행사 카누크리에이션 대리
                             </td>
@@ -101,7 +129,7 @@ function App() {
                               <td>2015. 04 - 2016. 12 : 광고대행사 팸컴퍼니 사원</td>
                           </tr>
                           <tr>
-                            <td rowSpan="2">Education</td>
+                            <td rowSpan="2" className="tablecaption" style={pinktextBold}>Education</td>
                             <td>
                                 2013. 03 - 2015. 02 : 김포대학교 졸업
                             </td>
@@ -111,6 +139,105 @@ function App() {
                               2010. 02 - 2013. 02 : 범박고등학교 졸업
                             </td>
                           </tr>
+                          <tr>
+                            <td rowSpan="2" className="tablecaption" style={pinktextBold}>Study</td>
+                            <td>
+                              2021. 07 - 2022. 01 : 그린컴퓨터  웹퍼블리셔&amp;프론트엔드 과정 수료
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2017. 05 - 2017. 09 : 더조은컴퓨터 디지털 앱&amp;웹콘텐츠 수료
+                            </td>
+                          </tr>
+                          <tr>
+                            <td rowSpan="2" className="tablecaption" style={pinktextBold}>Certificate</td>
+                            <td>
+                              2022. 01 : GTQ 일러스트 1급 취득
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2017. 10 : GTQ 포토샵 1급 취득
+                            </td>
+                          </tr>
+                      </tbody>
+                      <thead className='useSkills'>
+                        <tr>
+                          <th colSpan="2">Use Skills</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                              <td style={pinktextBold} className="skillTilte">PhotoShop</td>
+                              <td>
+                                <span className='statusBar'>
+                                  {testData.map((item, idx) => (
+                                    <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                  ))} 
+                                </span>
+                              </td>
+                        </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">Illustrator</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData2.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">Figma</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData3.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">Indesign</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData4.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">HTML</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData5.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">CSS</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData6.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
+                      <tr>
+                            <td style={pinktextBold} className="skillTilte">Javascript</td>
+                            <td>
+                              <span className='statusBar'>
+                                {testData7.map((item, idx) => (
+                                  <StatusBar key={idx} bgcolor={item.bgcolor} barcolor={item.barcolor} />
+                                ))} 
+                              </span>
+                            </td>
+                      </tr>
                       </tbody>
                   </table>
             </div>
