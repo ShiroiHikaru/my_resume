@@ -2,6 +2,8 @@
 import React from 'react';
 import './normalize.css';
 import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 
 // images
 import mainProfile from '../src/images/main_profile.png';
@@ -77,7 +79,11 @@ function App() {
                 </div>
                 <div className='categori'>
                     <ul>
-                      <li><button style={pinktextBold}><img src={profileIcon} className='icon01'/>Profile</button></li>
+                      <li>
+                        <button style={pinktextBold}><img src={profileIcon} className='icon01'/>
+                          Profile
+                        </button>
+                      </li>
                       <li><button style={pinktextBold}><img src={github} className='icon02'/>Publishing</button></li>
                       <li><button style={pinktextBold}><img src={window} className='icon03'/>Web / Landing</button></li>
                       <li><button style={pinktextBold}><img src={grid} className='icon04'/>Graphic</button></li>
@@ -242,11 +248,25 @@ function App() {
                   </table>
             </div>
         </section>
+        <section className='Publishing'>
+          <div className='Pub_wrap'>
+            <h2>Publishing Page</h2>
+                <div className='Pub_box'>
+                  <div className='Pub_box_one'>
+                  
+                     
+                        <img src = {require('./images/emart.jpg')}/>
+              
+                  </div>
+                </div>
+          </div>
+        </section>
       </main>
     </div>
   );
-  
+ 
 }
+
 
 
 export default App;
