@@ -198,6 +198,24 @@ ul{
   border: none;
 } 
 
+/* 퍼블리싱 */
+.Publishing{
+  width: 100%;
+}
+
+.Publishing .Pub_wrap{
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.Publishing .Pub_wrap h2{
+  text-align: center;
+  font-family: 'GmarketSansBold';
+  font-size: 35px;
+}
+
 
 /* media query */
 @media (prefers-reduced-motion: no-preference) {

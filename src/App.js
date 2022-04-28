@@ -84,7 +84,7 @@ function App() {
                           Profile
                         </button>
                       </li>
-                      <li><button style={pinktextBold}><img src={github} className='icon02'/>Publishing</button></li>
+                      <li><button style={pinktextBold}><img src={github} className='icon02'onClick={'window.scroll(0, 1500)'}/>Publishing</button></li>
                       <li><button style={pinktextBold}><img src={window} className='icon03'/>Web / Landing</button></li>
                       <li><button style={pinktextBold}><img src={grid} className='icon04'/>Graphic</button></li>
                       <li><button style={pinktextBold}><img src={social} className='icon05'/>Social</button></li>
