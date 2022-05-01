@@ -2,6 +2,7 @@
 import React from 'react';
 import './normalize.css';
 import './App.css';
+import './media.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
@@ -61,7 +62,7 @@ function App() {
             <div className='profile'>
                 <div className='intro-wrap'>
                     <div className='intro-text'>
-                        <h2 style={pinktextBold}>Metamorphosis<br/>And Humble</h2>
+                        <h2 style={pinktextBold}>Metamorphosis<br/> And Humble</h2>
                         <h1 style={pinktextBold}>Hee Yeon<br/><span className='akaName'>a.k.a HIKARU</span></h1>
                         <div className='keypoint'>
                           매일매일이 <span className='keyword' style={pinktextBold}>색다른 메타몽</span> 처럼,

@@ -1,0 +1,93 @@
+/* laptop(랩탑) 미디어쿼리 */
+
+@media screen and (max-width: 1280px){
+  .App{
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  br{
+    display: none !important;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+  }
+
+  /* 전체 container 영역  */
+  .container .profile-wrap{
+    background: #121212 url(../src/images/mask.svg) no-repeat;
+    background-size: cover;  
+    background-position: center center;
+  background-attachment: fixed;
+  }
+
+  .container .profile-wrap .profile{
+    border: 1px solid red;
+    width: 90%;
+  }
+
+  .container .profile-wrap .profile .intro-wrap{
+    width: 95%;
+    display: flex;
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .profile-wrap .profile .intro-wrap .intro-text{
+    margin-top: 50px;
+    width: 70%;
+    text-align: center;
+  }
+
+  .container .profile-wrap .profile .intro-wrap .intro-text h1{
+    white-space: nowrap;
+    width: 65%;
+    margin: auto;
+    word-break: break-all;
+    white-space: normal;
+}  
+
+.container .profile-wrap .profile .intro-wrap .intro-text .keypoint{
+  white-space: nowrap;
+  width: 57%;
+  margin: auto;
+  margin-top: 30px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+.container .profile-wrap .profile .intro-wrap .intro-text .introduce{
+  white-space: nowrap;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  word-break: break-all;
+  white-space: normal;
+}
+
+  .container .profile-wrap .profile .intro-wrap .intro-text h2{
+    white-space: nowrap;
+}
+
+
+
+
+  .container .profile-wrap .profile .intro-wrap img{
+    width: 70%;
+    height: 100%;
+  }
+
+  /* 카테고리 항목 */
+
+}
+
+/* mobile(모바일) 미디어쿼리 */
+@media screen and (max-width: 480px){
+  
+}
+
