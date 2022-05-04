@@ -74,16 +74,37 @@
     white-space: nowrap;
 }
 
-
-
-
   .container .profile-wrap .profile .intro-wrap img{
     width: 70%;
     height: 100%;
   }
 
-  /* 카테고리 항목 */
+/* 인삿말 영역 */
+.hello{
+  width: 100%;
+}
 
+.hello .hello-wrap{
+  width: 90%;
+  margin: auto;
+}
+
+
+.hello .hello-wrap .hello-text .textbox{
+  border: 3px solid red;
+  word-break: keep-all;
+}
+
+/* 스팩영역 */
+.stack{
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stack .mystack{
+  width: 90%;
+}
 }
 
 /* mobile(모바일) 미디어쿼리 */
