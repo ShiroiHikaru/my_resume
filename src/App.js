@@ -256,8 +256,7 @@ function App() {
                   <div className='Pub_box_one'>
                   
                      
-                        <img src = {require('./images/emart.jpg')}/>
-              
+                       
                   </div>
                 </div>
           </div>
