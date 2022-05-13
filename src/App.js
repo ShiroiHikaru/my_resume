@@ -257,14 +257,8 @@ function App() {
                 <div className='Pub_box'>
                   <div className='Pub_box_list'>
                       <ul>
-                          <li><img src={require('./images/webpage1.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage2.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage3.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage4.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage5.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage6.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage7.jpg')} style={imgContent}/></li>
-                          <li><img src={require('./images/webpage8.jpg')} style={imgContent}/></li>
+                        <li><img src={require('./images/webpage8.jpg')} style={imgContent}/></li>
+                        <li><img src={require('./images/webpage8.jpg')} style={imgContent}/></li>
                       </ul> 
                   </div>
                 </div>
