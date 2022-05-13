@@ -198,9 +198,10 @@ ul{
   border: none;
 } 
 
-/* 퍼블리싱 */
+/* 퍼블리싱 - 웹페이지, 랜딩페이지*/
 .Publishing{
   width: 100%;
+  position: relative;
 }
 
 .Publishing .Pub_wrap{
@@ -214,6 +215,17 @@ ul{
   text-align: center;
   font-family: 'GmarketSansBold';
   font-size: 35px;
+}
+
+.Publishing .Pub_wrap .Pub_box .Pub_box_list ul{
+  position: absolute;
+  z-index: 5000;  
+}
+
+.Publishing .Pub_wrap .Pub_box .Pub_box_list ul li{
+  display: flex;
+  justify-content: space-between;
+
 }
 
 

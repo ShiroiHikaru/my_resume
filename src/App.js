@@ -55,6 +55,8 @@ function App() {
   let pinktextMedium = {color: '#FF6FA0', fontFamily: 'GmarketSansMedium'};
   let Blacktext = {color : '#000', fontFamily: 'GmarketSansMedium'};
 
+
+  const imgContent = {width : '500px'};
   return (
     <div className="App">
       <main className='container'>
@@ -99,7 +101,7 @@ function App() {
               <img src={bodyshot}/>
                   <div className='hello-text'>
                       <h2 style = {Blacktext}>
-                          Who is<br/>
+                          Who is&nbsp;<br/>
                           <span style={pinktextBold}>Hee Yeon?</span>
                       </h2>
                       <div className='textbox'>
@@ -253,11 +255,11 @@ function App() {
           <div className='Pub_wrap'>
             <h2>Publishing Page</h2>
                 <div className='Pub_box'>
-                  <div className='Pub_box_one'>
-                  
-                     
-                        <img src = {require('./images/emart.jpg')}/>
-              
+                  <div className='Pub_box_list'>
+                      <ul>
+                        <li><img src={require('./images/webpage8.jpg')} style={imgContent}/></li>
+                        <li><img src={require('./images/webpage8.jpg')} style={imgContent}/></li>
+                      </ul> 
                   </div>
                 </div>
           </div>
